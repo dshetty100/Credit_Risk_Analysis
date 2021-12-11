@@ -1,5 +1,4 @@
 # Credit Risk Analysis
-Credit risk analysis using scikit-learn and imbalanced-learn on sample credit data.
 
 ## Overview of the Analysis
 
@@ -12,7 +11,7 @@ The purpose of this analysis was to evaluate and predict individual customer cre
 * BalancedRandomForestClassifier
 * EasyEnsembleClassifier
 
-The analysis was performed using imbalanced-learn and scikit-learn libraries to train and evaluate the models. The credit card credit dataset from LendingClub, a peer-to-peer lending services company, was utilised for the analysis.
+The analysis was performed using imbalanced-learn and scikit-learn libraries to train and evaluate the models. The credit card credit dataset (LoanStats_2019Q1) from LendingClub, a peer-to-peer lending services company, was utilised for the analysis.
 After cleaning the data, the dataset consisted of 68,817 entries, and was heavily unbalanced, with only 0.5% of entries being classified as "high-risk."
 
 For the analysis, the data was oversampled in the RandomOverSampler and SMOTE algorithms, and undersampled in the ClusterCentroids algorithm. A combinatorial approach of over- and undersampling was used in SMOTEENN algorithm. The details of the analysis can be found in the code credit_risk_resampling.ipynb.
