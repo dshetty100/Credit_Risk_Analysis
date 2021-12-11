@@ -2,21 +2,22 @@
 
 ## Overview of the Analysis
 
-The purpose of this analysis was to evaluate and predict individual customer credit risk using Supervised Machine Learning algorithm. Credit risk being an inherently unbalanced classification problem, where good loans easily outnumber risky loans, we have used various machine learning algorithms, such as,
+The purpose of this analysis was to evaluate and predict individual customer credit risk using Supervised Machine Learning algorithms. Since credit risk is an inherently unbalanced classification problem, where good loans easily outnumber risky loans, a variety of machine learning algorithms was used to predict credit risk, such as,
 
-* RandomOverSampler
-* SMOTE
-* ClusterCentroids
-* SMOTEENN
-* BalancedRandomForestClassifier
-* EasyEnsembleClassifier
+Resampling techniques
+* Naive Random OverSampling
+* SMOTE Oversampling 
+* Cluster Centroids Undersampling
+* SMOTEENN (Combination of Over and Under Sampling)
 
-The analysis was performed using imbalanced-learn and scikit-learn libraries to train and evaluate the models. The credit card credit dataset (LoanStats_2019Q1) from LendingClub, a peer-to-peer lending services company, was utilised for the analysis. After cleaning the data, the dataset consisted of 68,817 entries, and was heavily unbalanced, with only 0.5% of entries being classified as "high-risk."
+* Balanced Random Forest Classifier
+* Easy Ensemble AdaBoost Classifier
 
-For the analysis, the data was oversampled in the RandomOverSampler and SMOTE algorithms, and undersampled in the ClusterCentroids algorithm. A combinatorial approach of over- and undersampling was used in SMOTEENN algorithm. The details of the analysis can be found in the code, [credit_risk_resampling.ipynb](https://github.com/dshetty100/Credit_Risk_Analysis/blob/main/credit_risk_resampling.ipynb). A comparison between two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, was made to predict credit risk. The details of this analysis can be found in the code, [credit_risk_ensemble.ipynb](https://github.com/dshetty100/Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb)
+In the Naive Random OverSampling and SMOTE algorithms, the data was oversampled, and in Cluster Centroids algorithm, the data was undersampled. In SMOTEENN algorithm a combination of over- and undersampling was used. The details of the analysis can be found in the code, [credit_risk_resampling.ipynb]. A comparison between two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, was made to predict credit risk. The details of this analysis can be found in the code, [credit_risk_ensemble.ipynb](https://github.com/dshetty100/Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb)
 
 The models were run and then evaluated for performance and accuracy at predicting credit risk.
 
+The analysis was performed using imbalanced-learn and scikit-learn libraries to train and evaluate the models. The credit card credit dataset (LoanStats_2019Q1) from LendingClub, a peer-to-peer lending services company, was utilised for the analysis. After cleaning the data, the dataset consisted of 68,470 entries, and was heavily unbalanced, with only 0.5% of entries being classified as "high-risk."
 
 
 
