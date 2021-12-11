@@ -4,12 +4,13 @@
 
 The purpose of this analysis was to evaluate and predict individual customer credit risk using Supervised Machine Learning algorithms. Since credit risk is an inherently unbalanced classification problem, where good loans easily outnumber risky loans, a variety of machine learning algorithms was used to predict credit risk, such as,
 
-Resampling techniques
+**Resampling Techniques**
 * Naive Random OverSampling
 * SMOTE Oversampling 
 * Cluster Centroids Undersampling
 * SMOTEENN (Combination of Over and Under Sampling)
 
+**Ensemble Learning Technique**
 * Balanced Random Forest Classifier
 * Easy Ensemble AdaBoost Classifier
 
