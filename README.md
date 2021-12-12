@@ -5,7 +5,7 @@
 The purpose of this analysis was to evaluate and predict individual customer credit risk using Supervised Machine Learning algorithms. Since credit risk is an inherently unbalanced classification problem, where good loans easily outnumber risky loans, a variety of machine learning algorithms was used to predict credit risk, such as,
 
 **Resampling Techniques**
-* Naive Random OverSampling
+* Naive Random Oversampling
 * SMOTE Oversampling 
 * Cluster Centroids Undersampling
 * SMOTEENN (Combination of Over and Under Sampling)
@@ -14,7 +14,7 @@ The purpose of this analysis was to evaluate and predict individual customer cre
 * Balanced Random Forest Classifier
 * Easy Ensemble AdaBoost Classifier
 
-In the Naive Random OverSampling and SMOTE algorithms, the data were oversampled, and in the Cluster Centroids algorithm, the data was undersampled. In the SMOTEENN algorithm, a combination of over-and undersampling was used. The details of the analysis can be found in the code, [credit_risk_resampling.ipynb](https://github.com/dshetty100/Credit_Risk_Analysis/blob/main/credit_risk_resampling.ipynb). A comparison between two new machine learning models that reduce bias, Balanced RandomForest Classifier, and Easy Ensemble Classifier, was made to predict credit risk. The details of this analysis can be found in the code, [credit_risk_ensemble.ipynb](https://github.com/dshetty100/Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb)
+In the Naive Random OverSampling and SMOTE Oversampling algorithms, the data were oversampled, and in the Cluster Centroids algorithm, the data was undersampled. In the SMOTEENN algorithm, a combination of over-and undersampling was used. The details of the analysis can be found in the code, [credit_risk_resampling.ipynb](https://github.com/dshetty100/Credit_Risk_Analysis/blob/main/credit_risk_resampling.ipynb). A comparison between two new machine learning models that reduce bias, Balanced RandomForest Classifier, and Easy Ensemble Classifier, was made to predict credit risk. The details of this analysis can be found in the code, [credit_risk_ensemble.ipynb](https://github.com/dshetty100/Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb)
 
 The models were run and then evaluated for performance and accuracy at predicting credit risk.
 
