@@ -56,13 +56,16 @@ The balanced accuracy scores and the precision and recall (sensitivity) scores o
     The average F-score showed significant improvement with a value of 0.92. However, it's F-score for high-risk prediction was still low, at only 0.06.    
     ![Balanced Random Forest Classifier Imbalanced Classifications Report](Images/BRFC_CR.png)
 
-* **Easy Ensemble AdaBoost Classifier** gave an accuracy score of 0.97 and was among the best performing model. It predicted an accuracy rate of 97% of the appropriate levels of credit risks.
+* **Easy Ensemble AdaBoost Classifier** gave an accuracy score of 0.9319 and was among the best performing model. It predicted an accuracy rate of 93% of the appropriate levels of credit risks.
     ![Easy Ensemble AdaBoost Classifier Balanced Accuracy Score](Images/EEAC_BA.png)
 
     The averge F-score also showed significant improvement with a value of 0.97. However, it's F-score for high-risk prediction was still low, at only 0.16.      
     ![Easy Ensemble AdaBoost Classifier Imbalanced Classifications Report](Images/EEAC_CR.png)
 
 ## Summary
-The results are presented in ascending levels of performance, based on their balanced acuracy scores, starting with the worst-performing model and moving to the best.
 
-In conclusion, credit-risk is a difficult thing to predict, even for advanced machine learning algorithms with 93 columns of data to process. While the **Easy Ensemble AdaBoost Classifier** model had the highest overall accuracy, this was largely due to the fact that the dataset was so radically unbalanced. Even when it's balanced accuracy and average F-score were above 90%, it's F-score for high-risk prediction was no better than 0.16. In the end, I would advise against using any of these algorithms, as it would put creditors as too great of risk being unable to accurately predict who the high-risk clients/debtors would be.
+In summary, six different machine learning models were utilized to evaluate and predict individual customer credit risk.
+The results were presented in ascending levels of performance, based on their balanced acuracy scores, starting with the worst-performing model and moving to the best. It is observed that 
+the **Easy Ensemble AdaBoost Classifier** model had the highest overall accuracy of 93% and performed much better than all other models. It also outperformed all other models in terms of average F-score of 0.97. However, it's F-score for high-risk prediction was no better than 0.16. This is a matter of concern. With such a low F-score value the model is not good enough to accurately predict high-risk application. I would recommend researching a better maching learning algorithm that would predict with higher degree of accuracy. 
+
+
