@@ -14,7 +14,7 @@ The purpose of this analysis was to evaluate and predict individual customer cre
 * Balanced Random Forest Classifier
 * Easy Ensemble AdaBoost Classifier
 
-In the Naive Random OverSampling and SMOTE algorithms, the data was oversampled, and in Cluster Centroids algorithm, the data was undersampled. In SMOTEENN algorithm a combination of over- and undersampling was used. The details of the analysis can be found in the code, [credit_risk_resampling.ipynb]. A comparison between two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, was made to predict credit risk. The details of this analysis can be found in the code, [credit_risk_ensemble.ipynb](https://github.com/dshetty100/Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb)
+In the Naive Random OverSampling and SMOTE algorithms, the data was oversampled, and in Cluster Centroids algorithm, the data was undersampled. In SMOTEENN algorithm a combination of over- and undersampling was used. The details of the analysis can be found in the code, [credit_risk_resampling.ipynb]. A comparison between two new machine learning models that reduce bias, Balanced RandomForest Classifier and Easy Ensemble Classifier, was made to predict credit risk. The details of this analysis can be found in the code, [credit_risk_ensemble.ipynb](https://github.com/dshetty100/Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb)
 
 The models were run and then evaluated for performance and accuracy at predicting credit risk.
 
@@ -23,9 +23,9 @@ The analysis was performed using imbalanced-learn and scikit-learn libraries to 
 
 
 ## Results
-In examining the results we will look at the Balanced Accuracy Score as well as the Imbalanced Classification Report (ICR) from each model. Of particular interest in the ICR are two figures from the "f1" (F-score) column - the number from the bottom "avg / total" row, as well as the f-score from the "high risk" row, since we're primarily interested in our ability to detect high credit risk individuals. 
 
-The following results are presented in ascending levels of performance, based on their Balanced Accuracy Scores, starting with the worst-performing model and moving to the best.
+The balanced accuracy scores and the precision and recall scores of all six machine learning models is discussed below.
+The results are presented in ascending levels of performance, based on their balanced acuracy scores, starting with the worst-performing model and moving to the best.
 
 * **Cluster Centroids Undersampling** gave us the worst results, with an accuracy score of 0.5295. That means that it did little better than 50%, or a 50/50 coin-toss, at accurately predicting credit risks.
     ![Cluster Centroids Undersampling Balanced Accuracy Score](images/ccu_bal_acc.png)
