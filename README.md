@@ -33,7 +33,7 @@ The results are presented in ascending levels of performance, based on their bal
     The F-scores were an average of only 0.57 and an F-score for high-risk prediction of only 0.01.
     ![Cluster Centroids Undersampling Imbalanced Classifications Report](Images/CC_CR.png)
 
-* **Combination Sampling** gave an accuracy score of 0.6579. The model shows 66% accuracy at predicting credit risks.
+* **SMOTEENN (Combination of Over and Under Sampling)** gave an accuracy score of 0.6579. The model shows 66% accuracy at predicting credit risks.
     ![Combination Sampling Balanced Accuracy Score](Images/SMOTEEN_BA.png)
 
     The F-scores were an average of only 0.72 and an F-score for high-risk prediction of only 0.02.
