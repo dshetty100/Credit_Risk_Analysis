@@ -14,17 +14,17 @@ The purpose of this analysis was to evaluate and predict individual customer cre
 * Balanced Random Forest Classifier
 * Easy Ensemble AdaBoost Classifier
 
-In the Naive Random OverSampling and SMOTE algorithms, the data was oversampled, and in Cluster Centroids algorithm, the data was undersampled. In SMOTEENN algorithm a combination of over- and undersampling was used. The details of the analysis can be found in the code, [credit_risk_resampling.ipynb]. A comparison between two new machine learning models that reduce bias, Balanced RandomForest Classifier and Easy Ensemble Classifier, was made to predict credit risk. The details of this analysis can be found in the code, [credit_risk_ensemble.ipynb](https://github.com/dshetty100/Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb)
+In the Naive Random OverSampling and SMOTE algorithms, the data were oversampled, and in the Cluster Centroids algorithm, the data was undersampled. In the SMOTEENN algorithm, a combination of over-and undersampling was used. The details of the analysis can be found in the code, [credit_risk_resampling.ipynb]. A comparison between two new machine learning models that reduce bias, Balanced RandomForest Classifier, and Easy Ensemble Classifier, was made to predict credit risk. The details of this analysis can be found in the code, [credit_risk_ensemble.ipynb](https://github.com/dshetty100/Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb)
 
 The models were run and then evaluated for performance and accuracy at predicting credit risk.
 
-The analysis was performed using imbalanced-learn and scikit-learn libraries to train and evaluate the models. The credit card credit dataset (LoanStats_2019Q1) from LendingClub, a peer-to-peer lending services company, was utilised for the analysis. After cleaning the data, the dataset consisted of 68,470 entries, and was heavily unbalanced, with only 0.5% of entries being classified as "high-risk."
+The analysis was performed using imbalanced-learn and scikit-learn libraries to train and evaluate the models. The credit card credit dataset (LoanStats_2019Q1) from LendingClub, a peer-to-peer lending services company, was utilized for the analysis. After cleaning the data, the dataset consisted of 68,470 entries, and was heavily unbalanced, with only 0.5% of entries being classified as "high-risk."
 
 
 
 ## Results
 
-The balanced accuracy scores and the precision and recall (sensitivity) scores of all six machine learning models is discussed below.
+The balanced accuracy scores and the precision and recall (sensitivity) scores of all six machine learning models are discussed below.
 
 * **Cluster Centroids Undersampling** gave an accuracy score of 0.5365 and had the lowest accuracy score among all the models that were tested. The model shows only 54% accuracy at predicting credit risks.
     ![Cluster Centroids Undersampling Balanced Accuracy Score](Images/CC_BA.png)
@@ -47,25 +47,26 @@ The balanced accuracy scores and the precision and recall (sensitivity) scores o
 * **Naive Random Oversampling** gave an accuracy score of 0.6804, which is still very similar to what we saw from **SMOTEENN (Combination of Over and Under Sampling)** and **SMOTE Oversampling**. This model shows an accuracy of 68% at predicting credit risks.
     ![Random Oversampling Balanced Accuracy Score](Images/NRO_BA.png)
 
-    The average F-scores was on-par with **SMOTE Oversampling** with a value of 0.77 and F-score for high-risk prediction of only 0.02.
+    The average F-score was on-par with **SMOTE Oversampling** with a value of 0.77 and an F-score for high-risk prediction of only 0.02.
     ![Random Oversampling Imbalanced Classifications Report](Images/NRO_CR.png)
 
-* **Balanced Random Forest Classifier** gave an accuracy score of 0.7615 and showed slight improvement over previous models. The model accuracy for predicting credit risk was about 76%.
+* **Balanced Random Forest Classifier** gave an accuracy score of 0.7615 and showed a slight improvement over previous models. The model accuracy for predicting credit risk was about 76%.
     ![Balanced Random Forest Classifier Balanced Accuracy Score](Images/BRFC_BA.png)
 
-    The average F-score showed significant improvement with a value of 0.92. However, it's F-score for high-risk prediction was still low, at only 0.06.    
+    The average F-score showed significant improvement with a value of 0.92. However, its F-score for high-risk prediction was still low, at only 0.06.    
     ![Balanced Random Forest Classifier Imbalanced Classifications Report](Images/BRFC_CR.png)
 
 * **Easy Ensemble AdaBoost Classifier** gave an accuracy score of 0.9319 and was among the best performing model. It predicted an accuracy rate of 93% of the appropriate levels of credit risks.
     ![Easy Ensemble AdaBoost Classifier Balanced Accuracy Score](Images/EEAC_BA.png)
 
-    The averge F-score also showed significant improvement with a value of 0.97. However, it's F-score for high-risk prediction was still low, at only 0.16.      
+    The average F-score also showed significant improvement with a value of 0.97. However, its F-score for high-risk prediction was still low, at only 0.16.      
     ![Easy Ensemble AdaBoost Classifier Imbalanced Classifications Report](Images/EEAC_CR.png)
 
 ## Summary
 
 In summary, six different machine learning models were utilized to evaluate and predict individual customer credit risk.
-The results were presented in ascending levels of performance, based on their balanced acuracy scores, starting with the worst-performing model and moving to the best. It is observed that 
-the **Easy Ensemble AdaBoost Classifier** model had the highest overall accuracy of 93% and performed much better than all other models. It also outperformed all other models in terms of average F-score of 0.97. However, it's F-score for high-risk prediction was no better than 0.16. This is a matter of concern. With such a low F-score value the model is not good enough to accurately predict high-risk application. I would recommend researching a better maching learning algorithm that would predict with higher degree of accuracy. 
+The results were presented in ascending levels of performance, based on their balanced accuracy scores, starting with the worst-performing model and moving to the best. It is observed that 
+the **Easy Ensemble AdaBoost Classifier** model had the highest overall accuracy of 93% and performed much better than all other models. It also outperformed all other models in terms of an average F-score of 0.97. However, its F-score for high-risk prediction was no better than 0.16. This is a matter of concern. With such a low F-score value the model is not good enough to accurately predict high-risk credit applications. I would recommend researching a better machine learning algorithm that would predict with a higher degree of accuracy. 
+
 
 
