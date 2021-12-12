@@ -18,7 +18,7 @@ In the Naive Random OverSampling and SMOTE algorithms, the data were oversampled
 
 The models were run and then evaluated for performance and accuracy at predicting credit risk.
 
-The analysis was performed using imbalanced-learn and scikit-learn libraries to train and evaluate the models. The credit card credit dataset (LoanStats_2019Q1) from LendingClub, a peer-to-peer lending services company, was utilized for the analysis. After cleaning the data, the dataset consisted of 68,470 entries, and was heavily unbalanced, with only 0.5% of entries being classified as "high-risk."
+The analysis was performed using imbalanced-learn and scikit-learn libraries to train and evaluate the models. The credit card credit dataset (LoanStats_2019Q1.csv) from LendingClub, a peer-to-peer lending services company, was utilized for the analysis. After cleaning the data, the dataset consisted of 68,470 entries, and was heavily unbalanced, with only 0.5% of entries being classified as "high-risk."
 
 
 
